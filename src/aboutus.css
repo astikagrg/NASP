@@ -1,0 +1,274 @@
+/*
+==============================================
+CSS For know about us banner section
+==============================================
+*/
+
+#know-about-us {
+    width: 80%;
+    height: 350px;
+    margin: 80px 0px;
+    margin-bottom: 200px;
+}
+
+.know-about-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background: #000;
+}
+
+.know-about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.header-text {
+    width: 55%;
+}
+
+.know-about-header {
+    margin-left: 90px;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.side-col-text {
+    width: 45%;
+}
+
+.side-col-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.side-col-info {
+    margin-top: 30px;
+    color: #1D2130;
+    text-align: justify;
+}
+
+#know-about-banner {
+    background-color: #EFF7F2;
+    width: 100%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.banner-card {
+    position: relative;
+    height: 448px;
+    width: 80%;
+    background-size: contain;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translate(0%, -80%);
+    z-index: 999;
+}
+
+.banner-card-img {
+    height: 448px;
+    width: 100%;
+}
+
+.banner-content {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    width: 80%;
+    display: flex;
+}
+
+.banner-mission {
+    width: 50%;
+}
+
+.banner-vision {
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-mission ul li {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.banner-vision p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 100px;
+}
+
+/*
+==============================================
+CSS For What we do section
+==============================================
+*/
+
+#what-we-do {
+    background-color: #EFF7F2;
+    width: 100%;
+    height: 1288px;
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do-container {
+    height: 100%;
+    width: 80%;
+}
+
+.what-we-do-header {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.message-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.message-content {
+    height: 860px;
+    width: 50%;
+}
+
+.image-content {
+    width: 45%;
+}
+
+.president-pic {
+    height: auto;
+    width: 80%;
+}
+
+.message-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: justify;
+}
+
+.message-content p span {
+    font-weight: 700;
+}
+
+.image-content p {
+    width: 80%;
+    text-align: right;
+    line-height: 25.6px;
+}
+
+/*
+==============================================
+CSS For our team section
+==============================================
+*/
+
+#our-team {
+    height: 1500px;
+    width: 80%;
+    margin: 80px 0px;
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-text-content p {
+    color: #525560;
+}
+
+.team-card-content {
+    display: flex;
+    gap: 50px;
+}
+
+.card1,
+.card2,
+.card3 {
+    height: 450px;
+    width: 320px;
+}
+
+.card-pic {
+    max-width: 320px;
+    max-height: 320px;
+    height: 310px;
+    width: 100%;
+}
+
+.card-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.card-text-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-text-content h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1D2130;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-icons img {
+    height: 20px;
+    width: 20px;
+}

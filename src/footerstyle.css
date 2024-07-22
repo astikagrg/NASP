@@ -1,0 +1,52 @@
+/*
+==============================================
+CSS For footer section
+==============================================
+*/
+
+#footer {
+    height: 400px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-content img {
+    height: 70px;
+    width: 70px;
+}
+
+.footer-content ul li {
+    list-style-type: none;
+    color: #bdbdbd;
+    margin: 20px 0px;
+}
+
+.footer-content ul li:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-icons img {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}

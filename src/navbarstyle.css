@@ -1,0 +1,54 @@
+/* 
+==============================================
+CSS For Navbar
+==============================================
+*/
+.navbar {
+    /* background-color: aqua; */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    /* background-color: aqua; */
+    width: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .nav-items {
+    /* background-color: red; */
+  }
+  
+  .nav-items ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0px 15px;
+  }
+  
+  .nav-items ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-items ul li:last-child {
+    margin-right: 30px;
+    background-color: #000;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 4px;
+  }
+  
+  .nav-items ul li a.active {
+    font-weight: bold;
+    /* font-size: larger; */
+    /* color: blue; */
+  }
