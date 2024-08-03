@@ -1,0 +1,113 @@
+/*
+==============================================
+CSS For activities intro section
+==============================================
+*/
+
+#activities-intro {
+    width: 80%;
+    height: 420px;
+}
+
+.intro-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.know-about-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background: #000;
+}
+
+.activities-header {
+    margin-left: 90px;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.intro-text {
+    margin-left: 90px;
+    margin-top: 30px;
+    color: #1D2130;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25.6px;
+    width: 55%;
+}
+
+
+/*
+==============================================
+CSS For activities intro2 section
+==============================================
+*/
+
+#activities-intro2 {
+    background-color: #EFF7F2;
+    /* background-color: red; */
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro2-container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.intro2-header {
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.group-holder {
+    width: 100%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card-group {
+    padding-top: 50px;
+    padding-left: 50px;
+    gap: 24px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-icon img{
+    height: 28px;
+    width: 28px;
+}
+
+.card-text-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.card-text-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #525560;
+}
