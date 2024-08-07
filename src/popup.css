@@ -18,7 +18,8 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 30vw;
+    max-height: 90vh;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
@@ -39,13 +40,15 @@
 }
 
 .popup-image {
-    width: 100%;
-    height: auto;
+    max-width: 500px;
+        max-height: 70vh;
+
 }
 
 .register-btn {
     height: 50px;
     width: 250px;
+    max-width: 30vw;
     background-color: #70C174;
     color: #fff;
     font-size: 16px;
