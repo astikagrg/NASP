@@ -1,54 +1,3 @@
-
-
-/* 
-==============================================
-CSS For Navbar
-==============================================
-*/
-
-/* .navbar {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-container {
-  width: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-  width: 50px;
-}
-
-.nav-items ul li {
-  list-style-type: none;
-  display: inline;
-  margin: 0px 15px;
-}
-
-.nav-items ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-items ul li:last-child {
-  margin-right: 30px;
-  background-color: #000;
-  color: #fff;
-  padding: 0.7rem;
-  border-radius: 4px;
-}
-
-.nav-items ul li a.active {
-  font-weight: bold;
-} */
-
-
 /*
 ==============================================
 CSS For home-banner
@@ -89,75 +38,94 @@ CSS For home-banner
 
 /*
 ==============================================
-CSS For coference section
+CSS For conference section
 ==============================================
 */
 
 #home-conference {
   width: 80%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .conference {
   background-color: #000;
-  width: 1280px;
-  height: 576px;
+  width: 100%;
+  height: 80%;
   border-radius: 12px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
-.conference-text-image-wrapper {
+.content-wrapper {
+  height: 80%;
+  width: 90%;
   display: flex;
-  margin: 0 3rem 0 7rem;
-  align-items: center;
 }
 
-.conference-text-part {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-}
-
-.only-text-group {
+.text-content {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.only-text-group h2 {
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-right: 30px;
+}
+
+.conference-btn {
+  background-color: #70C174;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 20px;
+}
+
+.conference-btn:hover {
+  background-color: #00c90a;
+  color: #fff;
+}
+
+.text-content h2 {
   font-size: 16px;
   font-weight: 500;
+  line-height: 25px;
 }
 
-.only-text-group h1 {
+.text-content h1 {
   font-size: 45px;
   font-weight: 500;
+  line-height: 57px;
 }
 
-.only-text-group p {
+.text-content p {
   font-size: 16px;
   color: rgb(218, 218, 218);
-  line-height: 2;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: left;
 }
 
-.quantity-text-group {
-  display: flex;
-  gap: 1.4rem;
-}
-
-.quantity-text {
+.image-content {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-}
-
-.quantity-text h2 {
-  font-size: 12px;
-  color: rgb(218, 218, 218);
-  font-weight: 400;
+  justify-content: center;
 }
 
 /*
@@ -167,28 +135,39 @@ CSS For know about us section
 */
 
 #home-know-about {
-  width: 80%;
-  height: 580px;
-  margin: 80px 0px;
-  /* padding: 0px 100px; */
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .know-about-container {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  /* background-color: red; */
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
+.know-about-image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+
+}
+
+.know-about-img {
+  max-height: 100%;
+  height: 450px;
+  width: auto;
+  border-radius: 32px;
+}
+
 .know-about-content {
-  /* background-color: aqua; */
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   justify-content: center;
   gap: 20px;
 }
@@ -209,12 +188,15 @@ CSS For know about us section
 .know-about-header {
   font-size: 48px;
   font-weight: bold;
+  line-height: 57px;
+
 }
 
 .know-about-info {
   text-align: left;
   margin-right: 100px;
   color: #525560;
+  line-height: 25px;
 }
 
 .know-about-btn {
@@ -227,92 +209,9 @@ CSS For know about us section
   border: none;
 }
 
-.know-about-img {
-  width: 480px;
-  height: 580px;
-}
 
-/*
-==============================================
-CSS for activities section
-==============================================
-*/
 
-.home-activities {
-  height: 650px;
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
 
-.home-activities h2 {
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
-.home-activities h1 {
-  font-size: 48px;
-}
-
-.activities-image-wrapper {
-  position: relative;
-  width: 400px;
-  height: 450px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.activities-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.activities-image-text-part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: left;
-  padding: 43px 30px 30px 50px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-}
-
-.activities-image-text-part h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
-}
-
-.activities-image-text-part p {
-  font-size: 16px;
-  line-height: 160%;
-}
-
-.activities-image-text-part button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
-  background-color: #f9f9f9; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 2.5rem;
-}
-
-.activities-image-text-part button:hover {
-  background-color: #c6c8ca;
-}
-
-.activitites-image-group {
-  display: flex;
-  gap: 20px;
-}
 
 /*
 ==============================================
@@ -320,10 +219,10 @@ CSS For our team section
 ==============================================
 */
 
+
 #our-team {
-  height: 600px;
   width: 80%;
-  /* background-color: red; */
+  overflow: hidden;
 }
 
 .our-team-container {
@@ -345,34 +244,58 @@ CSS For our team section
   color: #525560;
 }
 
+.team-card-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
 .team-card-content {
-  display: flex;
-  /* justify-content: space-between; */
+  display: inline-flex;
   gap: 50px;
 }
 
-.card1,
-.card2,
-.card3 {
+.team-card-wrapper::-webkit-scrollbar {
+  height: 5px;
+  background-color: #f1f1f1;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card {
+  flex: 0 0 auto;
   height: 450px;
   width: 320px;
-  /* background-color: aqua; */
+  display: inline-block;
 }
 
 .card-pic {
-  max-width: 320px;
-  max-height: 320px;
-  height: 310px;
+  max-width: 310px;
+  max-height: 310px;
+  height: 300px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+  transform: scale(1.1);
 }
 
 .card-text-content {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
-
 
 .card-text-content h2 {
   font-size: 20px;
@@ -396,6 +319,8 @@ CSS For our team section
   width: 20px;
 }
 
+
+
 /*
 ==============================================
 CSS For our events section
@@ -403,9 +328,8 @@ CSS For our events section
 */
 
 #our-events {
-  height: 700px;
+  height: 750px;
   width: 80%;
-  /* background-color: red; */
 }
 
 .our-events-container {
@@ -424,7 +348,6 @@ CSS For our events section
   width: 80%;
   height: 1px;
   background: #E5E5E5;
-  /* margin: 0px 10px; */
 }
 
 .event-card {
@@ -464,13 +387,6 @@ CSS For our events section
   font-size: 40px;
 }
 
-/* .mission-card {
-  background-image: url(../assets/events-banner.png);
-  height: 384px;
-  width: 100%;
-  background-size: cover;
-  border-radius: 4px;
-} */
 
 .mission-card {
   position: relative;
@@ -521,56 +437,3 @@ CSS For our events section
 .mission-card button:hover {
   background-color: #b4b4b4;
 }
-
-/*
-==============================================
-CSS For footer section
-==============================================
-*/
-
-/* #footer {
-  height: 400px;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-}
-
-.footer-container {
-  height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.footer-content {
-  height: 60%;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.footer-content img {
-  height: 70px;
-  width: 70px;
-}
-
-.footer-content ul li {
-  list-style-type: none;
-  color: #bdbdbd;
-  margin: 20px 0px;
-}
-
-.footer-content ul li:first-child {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.footer-icons img {
-  height: 30px;
-  width: 30px;
-  margin-right: 15px;
-} */

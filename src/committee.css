@@ -25,30 +25,47 @@ CSS For our team section
     gap: 20px;
 }
 
+.team-text-content h1 {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+
 .team-text-content p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
     color: #525560;
 }
 
 .team-card-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 50px;
 }
 
-.card1,
-.card2,
-.card3 {
+.card {
     height: 450px;
     width: 320px;
 }
 
+
+
 .card-pic {
-    max-width: 320px;
-    max-height: 320px;
-    height: 310px;
+    max-width: 310px;
+    max-height: 310px;
+    height: 300px;
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+    transform: scale(1.1);
 }
 
 .card-text-content {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,9 +95,66 @@ CSS For our team section
     width: 20px;
 }
 
+
 /*
 ==============================================
-CSS For members section
+CSS For search-members section
+==============================================
+*/
+
+#search-members {
+    height: 400px;
+    width: 80%;
+    margin: 80px 0px;
+}
+
+.search-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.member-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-card h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.member-card h4{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.search {
+    height: 80px;
+    width: 80%;
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+
+
+/*
+==============================================
+CSS For members list section
 ==============================================
 */
 

@@ -39,7 +39,7 @@ CSS For know about us banner section
 }
 
 .header-text {
-    width: 55%;
+    width: 65%;
 }
 
 .know-about-header {
@@ -47,22 +47,6 @@ CSS For know about us banner section
     font-size: 56px;
     font-weight: bold;
     text-align: left;
-}
-
-.side-col-text {
-    width: 45%;
-}
-
-.side-col-header {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.side-col-info {
-    margin-top: 30px;
-    color: #1D2130;
-    text-align: justify;
 }
 
 
@@ -129,12 +113,16 @@ CSS For know about banner section
     margin-left: 40px;
     margin-right: 50px;
     margin-bottom: 20px;
+    color: #1D2130;
+    line-height: 25px;
 }
 
 .banner-vision p {
     font-size: 16px;
     font-weight: normal;
     margin-right: 100px;
+    color: #1D2130;
+    line-height: 25px;
 }
 
 /*
@@ -228,30 +216,47 @@ CSS For our team section
     gap: 20px;
 }
 
+.team-text-content h1 {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+
 .team-text-content p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
     color: #525560;
 }
 
 .team-card-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 50px;
 }
 
-.card1,
-.card2,
-.card3 {
+.card {
     height: 450px;
     width: 320px;
 }
 
+
+
 .card-pic {
-    max-width: 320px;
-    max-height: 320px;
-    height: 310px;
+    max-width: 310px;
+    max-height: 310px;
+    height: 300px;
     width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+    transform: scale(1.1);
 }
 
 .card-text-content {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;

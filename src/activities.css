@@ -6,15 +6,18 @@ CSS For activities intro section
 
 #activities-intro {
     width: 80%;
-    height: 420px;
+    height: 500px;
 }
 
 .intro-container {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.intro-content {
+    width: 60%;
 }
 
 .know-about-text {
@@ -45,9 +48,13 @@ CSS For activities intro section
     text-align: justify;
     font-size: 16px;
     line-height: 25.6px;
-    width: 55%;
+    width: 80%;
 }
 
+.intro-image {
+    height: auto;
+    width: 420px;
+}
 
 /*
 ==============================================
@@ -66,7 +73,7 @@ CSS For activities intro2 section
 
 .intro2-container {
     height: 100%;
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +101,7 @@ CSS For activities intro2 section
     align-items: flex-start;
 }
 
-.card-icon img{
+.card-icon img {
     height: 28px;
     width: 28px;
 }
@@ -109,5 +116,237 @@ CSS For activities intro2 section
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    color: #525560;
+}
+
+/* 
+    Upcoming Events
+*/
+
+#our-events {
+    height: 350px;
+    width: 80%;
+}
+
+.our-events-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.big-line {
+    width: 80%;
+    height: 1px;
+    background: #E5E5E5;
+    /* margin: 0px 10px; */
+}
+
+.event-card {
+    height: 190px;
+    width: 50%;
+    background-color: #BEF3C0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.event-card span {
+    font-size: 48px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.event-card span h1 {
+    font-size: 16px;
+}
+
+.event-card img {
+    height: 56px;
+    width: 56px;
+}
+
+.event-card-text h2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.event-card-text span {
+    font-size: 40px;
+}
+
+/*
+    Events list
+*/
+
+#activities-events {
+    width: 80%;
+}
+
+.event-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.event-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.content ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+
+/*
+==============================================
+CSS for activities section
+==============================================
+*/
+
+.home-activities {
+    height: 650px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.home-activities h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.home-activities h1 {
+    font-size: 48px;
+}
+
+.activities-image-wrapper {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.activities-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activities-image-text-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: left;
+    padding: 43px 30px 30px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities-image-text-part h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.activities-image-text-part p {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.activities-image-text-part button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+}
+
+.activities-image-text-part button:hover {
+    background-color: #c6c8ca;
+}
+
+.activitites-image-group {
+    display: flex;
+    gap: 20px;
+}
+
+
+#work-with-us {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-with-container {
+    height: 100%;
+    width: 60%;
+}
+
+.work-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.work-intro p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
     color: #525560;
 }
