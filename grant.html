@@ -17,12 +17,15 @@
         <div class="logo-container">
             <img class="logo" src="assets/logo.png" alt="logo">
             <span class="logo-text">NASP</span>
-        </div>
 
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="nav-items">
             <ul>
-                <!-- Add the below class for page that is to be active. -->
-                <!-- class="active" -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -37,7 +40,7 @@
     </nav>
 
 
-    <section id="member-section">
+    <section id="member-section" style="margin-top: 80px;">
         <div class="member-container">
             <div class="membership-content">
                 <h1 class="member-header">
@@ -56,7 +59,7 @@
 
                 <br><br>
 
-                <a class="member-btn" style="text-decoration: none;" href="assets/grant/nasp_grant_application_2021.doc" download>
+                <a class="member-btn" style="text-decoration: none; padding-top: 15px;" href="assets/grant/nasp_grant_application_2021.doc" download>
                     Download Grant Form
                 </a>
 
@@ -104,6 +107,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

@@ -56,15 +56,88 @@ CSS For activities intro section
     width: 420px;
 }
 
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .know-about-text {
+        gap: 15px;
+    }
+
+    .line {
+        width: 60px;
+    }
+
+    .intro-content {
+        width: 100%;
+    }
+
+    .activities-header {
+        font-size: 32px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    .intro-image {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .activities-header {
+        font-size: 28px;
+    }
+    
+    .intro-content {
+        width: 100%;
+    }
+
+    .intro-text {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .intro-image {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .activities-header {
+        font-size: 24px;
+    }
+
+    .intro-text {
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .intro-content {
+        width: 100%;
+    }
+
+    .intro-image {
+        display: none;
+    }
+}
+
+
 /*
 ==============================================
 CSS For activities intro2 section
 ==============================================
 */
 
-#activities-intro2 {
+/* #activities-intro2 {
     background-color: #EFF7F2;
-    /* background-color: red; */
     width: 100%;
     height: 550px;
     display: flex;
@@ -88,7 +161,6 @@ CSS For activities intro2 section
 
 .group-holder {
     width: 100%;
-    /* height: 100%; */
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -117,10 +189,133 @@ CSS For activities intro2 section
     font-weight: 400;
     line-height: 22px;
     color: #525560;
+} */
+
+#activities-intro2 {
+    background-color: #EFF7F2;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
+.intro2-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro2-header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.group-holder {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.card-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon img {
+    height: 28px;
+    width: 28px;
+}
+
+.card-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-text-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-text-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #525560;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+
+    .intro2-header {
+        font-size: 30px;
+    }
+
+    .card-text-title {
+        font-size: 18px;
+    }
+
+    .card-text-info {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro2-header {
+        font-size: 26px;
+    }
+
+    .card-text-title {
+        font-size: 16px;
+    }
+
+    .card-text-info {
+        font-size: 12px;
+    }
+
+    .card-group {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card-icon {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro2-header {
+        font-size: 22px;
+    }
+
+    .card-text-title {
+        font-size: 14px;
+    }
+
+    .card-text-info {
+        font-size: 11px;
+    }
+}
+
+
+
+
+
 /* 
+=================================================
     Upcoming Events
+=================================================
 */
 
 #our-events {
@@ -146,7 +341,6 @@ CSS For activities intro2 section
     width: 80%;
     height: 1px;
     background: #E5E5E5;
-    /* margin: 0px 10px; */
 }
 
 .event-card {
@@ -186,8 +380,100 @@ CSS For activities intro2 section
     font-size: 40px;
 }
 
+
+@media (max-width: 1024px) {
+
+    .event-card {
+        width: 80%;
+    }
+
+
+    .event-card span {
+        font-size: 32px;
+    }
+
+    .event-card span h1 {
+        font-size: 16px;
+    }
+
+    .event-card img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .event-card-text h2 {
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .event-card-text span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        width: 100%;
+    }
+
+
+    .event-card span {
+        font-size: 28px;
+    }
+
+    .event-card span h1 {
+        font-size: 14px;
+    }
+
+    .event-card img {
+        height: 36px;
+        width: 36px;
+    }
+
+    .event-card-text h2 {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .event-card-text span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .event-card {
+        width: 100%;
+    }
+
+    .event-card span {
+        font-size: 24px;
+    }
+
+    .event-card span h1 {
+        font-size: 12px;
+    }
+
+    .event-card img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .event-card-text h2 {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .event-card-text span {
+        font-size: 18px;
+    }
+}
+
+
 /*
-    Events list
+=========================================
+Events list
+=========================================
 */
 
 #activities-events {
@@ -239,6 +525,25 @@ CSS For activities intro2 section
     margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+
+    .event-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .event-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+}
+
 
 /*
 ==============================================
@@ -247,12 +552,13 @@ CSS for activities section
 */
 
 .home-activities {
-    height: 650px;
+    height: auto;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    margin: 50px 0 ;
 }
 
 .home-activities h2 {
@@ -262,6 +568,10 @@ CSS for activities section
 
 .home-activities h1 {
     font-size: 48px;
+}
+
+.activitites-image-group {
+    display: flex;
 }
 
 .activities-image-wrapper {
@@ -325,8 +635,104 @@ CSS for activities section
     gap: 20px;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .home-activities h1 {
+        font-size: 36px;
+    }
 
-#work-with-us {
+    .activitites-image-group {
+        flex-direction: column;
+    }
+    
+    .activities-image-wrapper {
+        width: 400px;
+        height: 450px;
+    }
+
+    .activities-image-text-part h2 {
+        font-size: 28px;
+    }
+
+    .activities-image-text-part p {
+        font-size: 18px;
+    }
+
+    .activities-image-text-part button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-activities h1 {
+        font-size: 28px;
+    }
+
+    .activitites-image-group {
+        flex-direction: column;
+    }
+    
+    .activities-image-wrapper {
+        width: 400px;
+        height: 450px;
+    }
+
+    .activities-image-text-part h2 {
+        font-size: 28px;
+    }
+
+    .activities-image-text-part p {
+        font-size: 18px;
+    }
+
+    .activities-image-text-part button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-activities {
+        width: 95%;
+    }
+
+    .home-activities h1 {
+        font-size: 24px;
+    }
+
+    .activitites-image-group {
+        flex-direction: column;
+    }
+    
+    .activities-image-wrapper {
+        width: 400px;
+        height: 450px;
+    }
+
+    .activities-image-text-part h2 {
+        font-size: 22px;
+    }
+
+    .activities-image-text-part p {
+        font-size: 16px;
+    }
+
+    .activities-image-text-part button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
+
+/*
+==============================================
+    Work with us
+==============================================
+*/
+
+
+/* #work-with-us {
     width: 80%;
     height: 200px;
     display: flex;
@@ -349,4 +755,71 @@ CSS for activities section
     font-weight: 400;
     line-height: 25px;
     color: #525560;
+} */
+
+#work-with-us {
+    width: 85%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.work-with-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.work-intro h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.work-intro p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #525560;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .work-intro h1 {
+        font-size: 32px;
+    }
+
+    .work-intro p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #work-with-us {
+        width: 90%;
+    }
+
+    .work-intro h1 {
+        font-size: 28px;
+    }
+
+    .work-intro p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    #work-with-us {
+        width: 95%;
+    }
+
+    .work-intro h1 {
+        font-size: 24px;
+    }
+
+    .work-intro p {
+        font-size: 12px;
+    }
 }

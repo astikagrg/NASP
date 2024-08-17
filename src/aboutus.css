@@ -4,7 +4,7 @@ CSS For know about us banner section
 ==============================================
 */
 
-#know-about-us {
+/* #know-about-us {
     width: 80%;
     height: 350px;
     margin: 80px 0px;
@@ -47,7 +47,148 @@ CSS For know about us banner section
     font-size: 56px;
     font-weight: bold;
     text-align: left;
+} */
+
+/* Base Styles */
+#know-about-us {
+    width: 80%;
+    height: 350px;
+    margin: 80px 0;
+    margin-bottom: 200px;
 }
+
+.know-about-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background: #000;
+}
+
+.know-about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.header-text {
+    width: 65%;
+}
+
+.know-about-header {
+    margin-left: 90px;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #know-about-us {
+        width: 90%;
+        margin-bottom: 150px;
+    }
+
+    .header-text {
+        width: 75%;
+    }
+
+    .know-about-header {
+        margin-left: 60px;
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 992px) {
+    #know-about-us {
+        width: 95%;
+        margin-bottom: 120px;
+    }
+
+    .know-about-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .line {
+        width: 50px;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .know-about-header {
+        margin-left: 0;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #know-about-us {
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .know-about-text {
+        text-align: center;
+    }
+
+    .line {
+        width: 40px;
+        margin: 0 auto;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .know-about-header {
+        margin-left: 0;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    #know-about-us {
+        height: auto;
+        margin: 60px 0;
+    }
+
+    .know-about-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .line {
+        width: 30px;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .know-about-header {
+        margin-left: 0;
+        font-size: 24px;
+    }
+}
+
 
 
 /*
@@ -125,6 +266,19 @@ CSS For know about banner section
     line-height: 25px;
 }
 
+@media (max-width: 768px) {
+    #know-about-banner {
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    #know-about-banner {
+        display: none;
+    }
+}
+
 /*
 ==============================================
 CSS For What we do section
@@ -189,6 +343,54 @@ CSS For What we do section
     line-height: 25.6px;
 }
 
+
+@media (max-width: 1024px) {
+    #what-we-do {
+        height: 1500px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .message-content {
+        display: none;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .image-content p {
+        width: 100%;
+    }
+
+    .president-pic {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    .message-content {
+        display: none;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+
+    .image-content p {
+        width: 100%;
+    }
+
+    .president-pic {
+        height: auto;
+        width: 100%;
+    }
+}
+
 /*
 ==============================================
 CSS For our team section
@@ -196,7 +398,7 @@ CSS For our team section
 */
 
 #our-team {
-    height: 1500px;
+    height: auto;
     width: 80%;
     margin: 80px 0px;
 }
@@ -241,8 +443,6 @@ CSS For our team section
     width: 320px;
 }
 
-
-
 .card-pic {
     max-width: 310px;
     max-height: 310px;
@@ -285,3 +485,161 @@ CSS For our team section
     height: 20px;
     width: 20px;
 }
+
+/* #our-team {
+    height: auto;
+    width: 80%;
+    margin: 80px auto; 
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-text-content h1 {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 700;
+}
+
+.team-text-content p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #525560;
+}
+
+.team-card-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+}
+
+.card {
+    height: auto; 
+    width: 100%; 
+    max-width: 320px; 
+    margin: 0 auto;
+}
+
+.card-pic {
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+    transform: scale(1.1);
+}
+
+.card-text-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-text-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-text-content h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1D2130;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-icons img {
+    height: 20px;
+    width: 20px;
+} */
+
+/* Mobile and tablet styles */
+@media (max-width: 768px) {
+    #our-team {
+        width: 90%; 
+        margin: 40px auto;
+    }
+
+    .team-text-content h1 {
+        font-size: 36px; 
+        line-height: 44px;
+    }
+
+    .team-text-content p {
+        font-size: 14px; 
+    }
+
+    .team-card-content {
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 100%; 
+    }
+
+    .card-text-content h2 {
+        font-size: 18px; 
+    }
+
+    .card-text-content h3 {
+        font-size: 12px; 
+    }
+
+    .card-icons img {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .team-text-content h1 {
+        font-size: 28px; 
+        line-height: 34px;
+    }
+
+    .team-text-content p {
+        font-size: 12px; 
+    }
+
+    .team-card-content {
+        grid-template-columns: 1fr; 
+    }
+
+    .card-text-content h2 {
+        font-size: 16px;
+    }
+
+    .card-text-content h3 {
+        font-size: 10px; 
+    }
+
+    .card-icons img {
+        height: 16px; 
+        width: 16px;
+    }
+}
+
+
+

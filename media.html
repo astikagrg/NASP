@@ -17,12 +17,15 @@
         <div class="logo-container">
             <img class="logo" src="assets/logo.png" alt="logo">
             <span class="logo-text">NASP</span>
-        </div>
 
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="nav-items">
             <ul>
-                <!-- Add the below class for page that is to be active. -->
-                <!-- class="active" -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -37,7 +40,7 @@
     </nav>
 
 
-    <section id="media-row">
+    <section id="media-row" style="margin-top: 120px;">
         <div class="media-container">
             <div class="row">
                 <h1 class="row-header">
@@ -50,10 +53,10 @@
                     <img class="row-image" src="assets/media/ucms3.png" alt="ucms-img">
                 </div>
             </div>
-            
+
         </div>
     </section>
-    <section id="media-row" style="height: 1200px;">
+    <section id="media-row">
         <div class="row">
             <h1 class="row-header">
                 CME at Nepal Cancer Hospital and Research Centre, Harisiddhi
@@ -69,7 +72,11 @@
                 Snaps from 1st CME
             </h1>
             <br>
-            <img class="row-image" src="assets/media/second-row-2.png" alt="ucms-img">
+            <div class="image-card-center">
+                <br>
+                <img class="row-image" src="assets/media/second-row-2.png" alt="ucms-img">
+            </div>
+
         </div>
     </section>
 
@@ -113,6 +120,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

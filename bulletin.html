@@ -17,12 +17,15 @@
         <div class="logo-container">
             <img class="logo" src="assets/logo.png" alt="logo">
             <span class="logo-text">NASP</span>
-        </div>
 
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <div class="nav-items">
             <ul>
-                <!-- Add the below class for page that is to be active. -->
-                <!-- class="active" -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -37,7 +40,7 @@
     </nav>
 
 
-    <section id="member-section">
+    <section id="member-section" style="margin-top: 80px;">
         <div class="member-container">
             <div class="membership-content">
                 <h1 class="member-header">
@@ -109,6 +112,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

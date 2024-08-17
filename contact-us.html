@@ -1,155 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="stylesheet" href="src/main.css" />
-    <link rel="stylesheet" href="src/navbarstyle.css" />
-    <link rel="stylesheet" href="src/contact-us.css" />
-    <link rel="stylesheet" href="src/footerstyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo-container">
-        <img class="logo" src="assets/logo.png" alt="logo" />
-        <span class="logo-text">NASP</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us</title>
+  <link rel="stylesheet" href="src/main.css" />
+  <link rel="stylesheet" href="src/navbarstyle.css" />
+  <link rel="stylesheet" href="src/contact-us.css" />
+  <link rel="stylesheet" href="src/footerstyle.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <img class="logo" src="assets/logo.png" alt="logo">
+      <span class="logo-text">NASP</span>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <div class="nav-items">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="activities.html">Activities</a></li>
-          <li><a href="committee.html">Committee</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="contact-us.html" class="active">Contact</a></li>
-          <li><a href="bulletin.html">Bulletin</a></li>
-          <li><a href="grant.html">Grant</a></li>
-          <li><a href="membership.html">Membership</a></li>
+    </div>
+    <div class="nav-items">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="committee.html">Committee</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact-us.html" class="active">Contact</a></li>
+        <li><a href="bulletin.html">Bulletin</a></li>
+        <li><a href="grant.html">Grant</a></li>
+        <li><a href="membership.html">Membership</a></li>
       </ul>
+    </div>
+  </nav>
+
+  <section class="contact-us-love-section" style="margin-top: 80px;">
+    <div class="contact-us-big-text-part">
+      <div class="contact-us-text">
+        <div class="contact-us-line"></div>
+        <span>CONTACT US</span>
       </div>
-    </nav>
-    <section class="contact-us-love-section">
-      <div class="contact-us-big-text-part">
-        <div class="contact-us-text">
-          <div class="contact-us-line"></div>
-          <span>CONTACT US</span>
-        </div>
-        <div class="love-head-and-para">
-          <h1>We'd love to hear from you</h1>
-          <p>
-            Have any question in mind or want to enquire? Please feel free to
-            contact us through the form or the following details.
-          </p>
-        </div>
+      <div class="love-head-and-para">
+        <h1>We'd love to hear from you</h1>
+        <p>
+          Have any question in mind or want to enquire? Please feel free to
+          contact us through the form or the following details.
+        </p>
       </div>
-      <div class="contact-us-small-text-part">
-        <div class="contact-talk">
-          <h2>Let's talk!</h2>
-          <p>+977 9841227182</p>
-          <p>nasp.org2017@gmail.com</p>
-        </div>
-        <div class="contact-office">
-          <h2>Office</h2>
-          <p>Department of Anaesthesiology</p>
-          <p>Tribhuvan University Teaching Hospital</p>
-          <p>INSTITUTE OF MEDICINE</p>
-          <p>Maharajgunj, Kathmandu</p>
-          <p>Nepal</p>
-        </div>
-        <div class="contact-icons">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-twitter"></i>
-          <i class="bi bi-linkedin"></i>
-        </div>
+    </div>
+    <div class="contact-us-small-text-part">
+      <div class="contact-talk">
+        <h2>Let's talk!</h2>
+        <p>+977 9841227182</p>
+        <p>nasp.org2017@gmail.com</p>
       </div>
-    </section>
-    <section class="contact-form">
-      <div class="contact-form-div">
-        <form>
-            <div class="form-input">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Id</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" />
-              </div>
-              <div class="form-group" id="form-message">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Type your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <button type="submit">Send message</button>
-            </div>
-        </form>
+      <div class="contact-office">
+        <h2>Office</h2>
+        <p>Department of Anaesthesiology</p>
+        <p>Tribhuvan University Teaching Hospital</p>
+        <p>INSTITUTE OF MEDICINE</p>
+        <p>Maharajgunj, Kathmandu</p>
+        <p>Nepal</p>
       </div>
-    </section>
-    <section id="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <img src="assets/logo.png" alt="footer-logo" />
-          <div class="row1">
-            <ul>
-              <li>NASP</li>
-              <li>About us</li>
-              <li>Committee</li>
-              <li>Membership</li>
-            </ul>
+      <div class="contact-icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-form">
+    <div class="contact-form-div">
+      <form>
+        <div class="form-input">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
           </div>
-          <div class="row2">
-            <ul>
-              <li>More</li>
-              <li>Activities</li>
-              <li>Media</li>
-              <li>Donate</li>
-              <li>Bulletin</li>
-            </ul>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
           </div>
-          <div class="row3">
-            <ul>
-              <li>Contact us</li>
-              <li>123 Main Streen, Anytown, USA</li>
-              <li>(+977)123-456</li>
-              <li>nasp</li>
-            </ul>
-            <div class="footer-icons">
-              <img
-                src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
-                alt="facebook-logo"
-              />
-              <img
-                src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000"
-                alt="twitter-logo"
-              />
-              <img
-                src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
-                alt="linkedin-logo"
-              />
-            </div>
+          <div class="form-group">
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-group" id="form-message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your Message" rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <img src="assets/logo.png" alt="footer-logo" />
+        <div class="row1">
+          <ul>
+            <li>NASP</li>
+            <li>About us</li>
+            <li>Committee</li>
+            <li>Membership</li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li>More</li>
+            <li>Activities</li>
+            <li>Media</li>
+            <li>Donate</li>
+            <li>Bulletin</li>
+          </ul>
+        </div>
+        <div class="row3">
+          <ul>
+            <li>Contact us</li>
+            <li>123 Main Streen, Anytown, USA</li>
+            <li>(+977)123-456</li>
+            <li>nasp</li>
+          </ul>
+          <div class="footer-icons">
+            <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="facebook-logo" />
+            <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="twitter-logo" />
+            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="linkedin-logo" />
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+  <script>
+    function toggleMenu() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
 </html>
