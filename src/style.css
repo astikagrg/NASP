@@ -1,54 +1,3 @@
-
-
-/* 
-==============================================
-CSS For Navbar
-==============================================
-*/
-
-/* .navbar {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-container {
-  width: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-  width: 50px;
-}
-
-.nav-items ul li {
-  list-style-type: none;
-  display: inline;
-  margin: 0px 15px;
-}
-
-.nav-items ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-items ul li:last-child {
-  margin-right: 30px;
-  background-color: #000;
-  color: #fff;
-  padding: 0.7rem;
-  border-radius: 4px;
-}
-
-.nav-items ul li a.active {
-  font-weight: bold;
-} */
-
-
 /*
 ==============================================
 CSS For home-banner
@@ -56,7 +5,7 @@ CSS For home-banner
 */
 
 
-#home-banner {
+/* #home-banner {
   background-image: url(../assets/home-banner.png);
   background-size: cover;
   width: 100%;
@@ -85,80 +34,334 @@ CSS For home-banner
   width: 150px;
   border-radius: 4px;
   border: none;
+} */
+
+#home-banner {
+  background-image: url(../assets/home-banner.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.banner-elements {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-text {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Tablet and Up */
+@media (min-width: 768px) {
+  .banner-elements {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    height: 290px;
+  }
+
+  .banner-text {
+    font-size: 54px;
+  }
+
+  .banner-btn {
+    align-self: flex-start;
+  }
+}
+
+/* Desktop and Up */
+@media (min-width: 1024px) {
+  #home-banner {
+    padding: 0;
+  }
+
+  .banner-elements {
+    width: 80%;
+  }
 }
 
 /*
 ==============================================
-CSS For coference section
+CSS For conference section
 ==============================================
 */
 
-#home-conference {
+/* #home-conference {
   width: 80%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .conference {
   background-color: #000;
-  width: 1280px;
-  height: 576px;
+  width: 100%;
+  height: 80%;
   border-radius: 12px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
-.conference-text-image-wrapper {
+.content-wrapper {
+  height: 80%;
+  width: 90%;
   display: flex;
-  margin: 0 3rem 0 7rem;
+}
+
+.text-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-right: 30px;
+}
+
+.conference-btn {
+  background-color: #70C174;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 20px;
+}
+
+.conference-btn:hover {
+  background-color: #00c90a;
+  color: #fff;
+}
+
+.text-content h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.text-content h1 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 57px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: rgb(218, 218, 218);
+  line-height: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.image-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+
+#home-conference {
+  width: 80%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.conference {
+  background-color: #000;
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-wrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-.conference-text-part {
+.text-content {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.only-text-group {
+.btn-content {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.only-text-group h2 {
+.conference-btn {
+  background-color: #70C174;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.conference-btn:hover {
+  background-color: #00c90a;
+  color: #fff;
+}
+
+.text-content h2 {
   font-size: 16px;
   font-weight: 500;
+  line-height: 25px;
 }
 
-.only-text-group h1 {
+.text-content h1 {
   font-size: 45px;
   font-weight: 500;
+  line-height: 57px;
 }
 
-.only-text-group p {
+.text-content p {
   font-size: 16px;
   color: rgb(218, 218, 218);
-  line-height: 2;
-}
-
-.quantity-text-group {
-  display: flex;
-  gap: 1.4rem;
-}
-
-.quantity-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.quantity-text h2 {
-  font-size: 12px;
-  color: rgb(218, 218, 218);
+  line-height: 25px;
   font-weight: 400;
+  text-align: left;
 }
+
+.image-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conference-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  #home-conference {
+    height: auto;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-content, .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .text-content h2, .text-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn-content {
+    align-items: center;
+  }
+
+  .conference-btn {
+    padding: 15px;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .conference-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  #home-conference {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .conference {
+    height: auto;
+    padding: 15px;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .text-content h2 {
+    font-size: 12px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .conference-btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .conference-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /*
 ==============================================
@@ -166,29 +369,40 @@ CSS For know about us section
 ==============================================
 */
 
-#home-know-about {
-  width: 80%;
-  height: 580px;
-  margin: 80px 0px;
-  /* padding: 0px 100px; */
+/* #home-know-about {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .know-about-container {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  /* background-color: red; */
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
+.know-about-image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+
+}
+
+.know-about-img {
+  max-height: 100%;
+  height: 450px;
+  width: auto;
+  border-radius: 32px;
+}
+
 .know-about-content {
-  /* background-color: aqua; */
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   justify-content: center;
   gap: 20px;
 }
@@ -209,12 +423,15 @@ CSS For know about us section
 .know-about-header {
   font-size: 48px;
   font-weight: bold;
+  line-height: 57px;
+
 }
 
 .know-about-info {
   text-align: left;
   margin-right: 100px;
   color: #525560;
+  line-height: 25px;
 }
 
 .know-about-btn {
@@ -225,94 +442,160 @@ CSS For know about us section
   font-size: 16px;
   border-radius: 4px;
   border: none;
-}
+} */
 
-.know-about-img {
-  width: 480px;
-  height: 580px;
-}
-
-/*
-==============================================
-CSS for activities section
-==============================================
-*/
-
-.home-activities {
-  height: 650px;
-  width: 85%;
+#home-know-about {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  padding: 20px 0;
 }
 
-.home-activities h2 {
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
-.home-activities h1 {
-  font-size: 48px;
-}
-
-.activities-image-wrapper {
-  position: relative;
-  width: 400px;
-  height: 450px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.activities-image-wrapper img {
-  width: 100%;
+.know-about-container {
+  width: 80%;
   height: 100%;
-  object-fit: cover;
-}
-
-.activities-image-text-part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: left;
-  padding: 43px 30px 30px 50px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-}
-
-.activities-image-text-part h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
-}
-
-.activities-image-text-part p {
-  font-size: 16px;
-  line-height: 160%;
-}
-
-.activities-image-text-part button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
-  background-color: #f9f9f9; 
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 2.5rem;
-}
-
-.activities-image-text-part button:hover {
-  background-color: #c6c8ca;
-}
-
-.activitites-image-group {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: 20px;
 }
+
+.know-about-image {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.know-about-img {
+  width: auto;
+  border-radius: 32px;
+}
+
+.know-about-content {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.know-about-text {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.line {
+  width: 70px;
+  height: 2px;
+  background: #000;
+}
+
+.know-about-header {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 57px;
+}
+
+.know-about-info {
+  text-align: left;
+  color: #525560;
+  line-height: 25px;
+}
+
+.know-about-btn {
+  height: 50px;
+  width: 150px;
+  background-color: #70C174;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .know-about-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .know-about-image {
+    display: none;
+  } 
+  
+  .know-about-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .know-about-header {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .know-about-info {
+    margin-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+  }
+
+  .know-about-btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .know-about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .know-about-image {
+    display: none;
+  }
+
+  .know-about-img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 16px;
+  }
+
+  .know-about-header {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .know-about-info {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .know-about-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+
+
+
 
 /*
 ==============================================
@@ -320,10 +603,10 @@ CSS For our team section
 ==============================================
 */
 
+
 #our-team {
-  height: 600px;
   width: 80%;
-  /* background-color: red; */
+  overflow: hidden;
 }
 
 .our-team-container {
@@ -345,34 +628,58 @@ CSS For our team section
   color: #525560;
 }
 
+.team-card-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
 .team-card-content {
-  display: flex;
-  /* justify-content: space-between; */
+  display: inline-flex;
   gap: 50px;
 }
 
-.card1,
-.card2,
-.card3 {
+.team-card-wrapper::-webkit-scrollbar {
+  height: 5px;
+  background-color: #f1f1f1;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card {
+  flex: 0 0 auto;
   height: 450px;
   width: 320px;
-  /* background-color: aqua; */
+  display: inline-block;
 }
 
 .card-pic {
-  max-width: 320px;
-  max-height: 320px;
-  height: 310px;
+  max-width: 310px;
+  max-height: 310px;
+  height: 300px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+  transform: scale(1.1);
 }
 
 .card-text-content {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
-
 
 .card-text-content h2 {
   font-size: 20px;
@@ -396,16 +703,17 @@ CSS For our team section
   width: 20px;
 }
 
+
+
 /*
 ==============================================
 CSS For our events section
 ==============================================
 */
 
-#our-events {
-  height: 700px;
+/* #our-events {
+  height: 750px;
   width: 80%;
-  /* background-color: red; */
 }
 
 .our-events-container {
@@ -424,7 +732,6 @@ CSS For our events section
   width: 80%;
   height: 1px;
   background: #E5E5E5;
-  /* margin: 0px 10px; */
 }
 
 .event-card {
@@ -464,13 +771,6 @@ CSS For our events section
   font-size: 40px;
 }
 
-/* .mission-card {
-  background-image: url(../assets/events-banner.png);
-  height: 384px;
-  width: 100%;
-  background-size: cover;
-  border-radius: 4px;
-} */
 
 .mission-card {
   position: relative;
@@ -520,57 +820,233 @@ CSS For our events section
 
 .mission-card button:hover {
   background-color: #b4b4b4;
-}
+} */
 
-/*
-==============================================
-CSS For footer section
-==============================================
-*/
 
-/* #footer {
-  height: 400px;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-}
 
-.footer-container {
-  height: 100%;
+#our-events {
+  height: auto;
   width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 50px auto;
 }
 
-.footer-content {
-  height: 60%;
-  width: 60%;
+.our-events-container {
+  height: 100%;
+  width: 100%;
+}
+
+.event-text-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-
-.footer-content img {
-  height: 70px;
-  width: 70px;
+.big-line {
+  width: 80%;
+  height: 1px;
+  background: #E5E5E5;
 }
 
-.footer-content ul li {
-  list-style-type: none;
-  color: #bdbdbd;
-  margin: 20px 0px;
+.event-card {
+  height: 190px;
+  width: 50%;
+  background-color: #BEF3C0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
-.footer-content ul li:first-child {
+.event-card span {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.event-card span h1 {
   font-size: 16px;
-  font-weight: bold;
-  color: #fff;
 }
 
-.footer-icons img {
-  height: 30px;
-  width: 30px;
-  margin-right: 15px;
-} */
+.event-card img {
+  height: 56px;
+  width: 56px;
+}
+
+.event-card-text h2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.event-card-text span {
+  font-size: 40px;
+}
+
+.mission-card {
+  position: relative;
+  background-image: url(../assets/events-banner.png);
+  height: 384px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.mission-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.mission-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.mission-card-content p {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.mission-card button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.mission-card button:hover {
+  background-color: #b4b4b4;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  #our-events {
+    width: 90%;
+  }
+
+  .event-text-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .big-line {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .event-card {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .event-card span {
+    font-size: 36px;
+  }
+
+  .event-card span h1 {
+    font-size: 18px;
+  }
+
+  .event-card-text h2 {
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  .event-card-text span {
+    font-size: 32px;
+  }
+
+  .event-card img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .mission-card {
+    height: auto;
+    padding: 30px;
+  }
+
+  .mission-card-content p {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .mission-card button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  #our-events {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .event-card {
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .event-card span {
+    font-size: 24px;
+  }
+
+  .event-card span h1 {
+    font-size: 16px;
+  }
+
+  .event-card-text h2 {
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .event-card-text span {
+    font-size: 24px;
+  }
+
+  .event-card img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mission-card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .mission-card-content p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .mission-card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

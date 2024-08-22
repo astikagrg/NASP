@@ -18,26 +18,29 @@
   <body>
     <nav class="navbar">
       <div class="logo-container">
-        <img class="logo" src="assets/logo.png" alt="logo" />
-        <span class="logo-text">NASP</span>
-      </div>
+          <img class="logo" src="assets/logo.png" alt="logo">
+          <span class="logo-text">NASP</span>
 
-      <div class="nav-items">
-        <ul>
-          <!-- Add the below class for page that is to be active. -->
-          <!-- class="active" -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="activities.html">Activities</a></li>
-          <li><a href="committee.html">Committee</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-          <li><a href="bulletin.html">Bulletin</a></li>
-          <li><a href="grant.html">Grant</a></li>
-          <li><a href="membership.html">Membership</a></li>
-        </ul>
+          <div class="hamburger" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
       </div>
-    </nav>
+      <div class="nav-items">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="activities.html">Activities</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="bulletin.html">Bulletin</a></li>
+              <li><a href="grant.html">Grant</a></li>
+              <li><a href="membership.html">Membership</a></li>
+          </ul>
+      </div>
+  </nav>
 
     <section class="pain-header">
       <div class="heading-address-date">
@@ -184,11 +187,9 @@
           <div class="row3">
             <ul>
               <li>Contact us</li>
-              <li>
-                ​Department of Anaesthesiology, TUTH, IOM,Kathmandu, Nepal
-              </li>
-              <li>+977 9841227182</li>
-              <li>nasp.org2017@gmail.com</li>
+              <li>123 Main Streen, Anytown, USA</li>
+              <li>(+977)123-456</li>
+              <li>nasp</li>
             </ul>
             <div class="footer-icons">
               <img
@@ -208,5 +209,11 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+          const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+      }
+  </script>
   </body>
 </html>
