@@ -15,12 +15,15 @@
       <div class="logo-container">
         <img class="logo" src="assets/logo.png" alt="logo" />
         <span class="logo-text">NASP</span>
-      </div>
 
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="nav-items">
         <ul>
-          <!-- Add the below class for page that is to be active. -->
-          <!-- class="active" -->
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="activities.html">Activities</a></li>
@@ -34,19 +37,14 @@
       </div>
     </nav>
 
-    <section id="our-team">
+    <section id="our-team" style="margin-top: 120px">
       <div class="our-team-container">
         <div class="team-text-content">
-          <h1>Meet Our Team</h1>
-          <p>
-            Team of NASP
-            <br />
-          
-          </p>
+          <h1>Executive Committee</h1>
+          <p>(2023-2025)</p>
         </div>
-        <!-- First Row  -->
         <div class="team-card-content">
-          <div class="card1">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/renu-gurung.png"
@@ -71,7 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="card2">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/asish-subedi.png"
@@ -96,7 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="card3">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/bigen-man-shakya.png"
@@ -121,10 +119,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Second Row  -->
-        <div class="team-card-content">
-          <div class="card1">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/niru-nepal.jpeg"
@@ -149,10 +144,10 @@
               </div>
             </div>
           </div>
-          <div class="card2">
+          <div class="card">
             <img
               class="card-pic"
-              src="assets/aboutus/hari-prasad-riijal.png"
+              src="assets/aboutus/hari-prasad.png"
               alt="pic-1"
             />
             <div class="card-text-content">
@@ -174,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="card3">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/hari-poudel.jpeg"
@@ -199,17 +194,14 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Third Row  -->
-        <div class="team-card-content">
-          <div class="card1">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/laxmi-pathak.jpeg"
               alt="pic-1"
             />
             <div class="card-text-content">
-              <h2>Prof. Laxmi Pathak</h2>
+              <h2>Profe. Laxmi Pathak</h2>
               <h3>Member</h3>
               <div class="card-icons">
                 <img
@@ -227,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="card2">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/sangam-pokhrel.jpeg"
@@ -252,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="card3">
+          <div class="card">
             <img
               class="card-pic"
               src="assets/aboutus/jay-prakash-thakur.png"
@@ -278,6 +270,32 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="search-members">
+      <div class="search-container">
+        <h1>Past Executive Committee</h1>
+        <br />
+        <div class="member-holder">
+          <div class="member-card">
+            <h2>2020-2022</h2>
+            <h4>President:</h4>
+            <h4>Secretary:</h4>
+            <h4>Treasure:</h4>
+          </div>
+          <div class="member-card">
+            <h2>2020-2022</h2>
+            <h4>President:</h4>
+            <h4>Secretary:</h4>
+            <h4>Treasure:</h4>
+          </div>
+        </div>
+        <input
+          type="text"
+          class="search"
+          placeholder="Enter Member ID/Name to search"
+        />
       </div>
     </section>
 
@@ -358,21 +376,21 @@
           <h6>
             Dr Renu Gurung
             <br />
-            TUTH, IOM
+            TUTU, IOM
             <br />
             Anaesthesia
           </h6>
           <h6>
             Dr Bigen man Shakya
             <br />
-            TUTH, IOM
+            TUTM, IOM
             <br />
             Anaesthesia
           </h6>
           <h6>
             Dr Ninadini Shrestha
             <br />
-            TUTH, IOM
+            TUTM, IOM
             <br />
             Anaesthesia
           </h6>
@@ -514,11 +532,9 @@
           <div class="row3">
             <ul>
               <li>Contact us</li>
-              <li>
-                ​Department of Anaesthesiology, TUTH, IOM,Kathmandu, Nepal
-              </li>
+              <li>​Department of Anaesthesiology, TUTH IOM,Kathmandu, Nepal</li>
               <li>+977 9841227182</li>
-              <li>nasp.org2017@gmail.com</li>
+              <li>nasp</li>
             </ul>
             <div class="footer-icons">
               <img
@@ -538,5 +554,11 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

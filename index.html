@@ -18,7 +18,7 @@
       <div class="popup-content">
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <img
-          src="assets/home/pop_up_home1.png"
+          src="assets/home/pop_up_home.png"
           alt="Popup Image"
           class="popup-image"
         />
@@ -32,12 +32,37 @@
       </div>
     </div>
 
+    <!-- <nav class="navbar">
+        <div class="logo-container">
+            <img class="logo" src="assets/logo.png" alt="logo">
+            <span class="logo-text">NASP</span>
+        </div>
+
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="bulletin.html">Bulletin</a></li>
+                <li><a href="grant.html">Grant</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+    </nav> -->
     <nav class="navbar">
       <div class="logo-container">
         <img class="logo" src="assets/logo.png" alt="logo" />
         <span class="logo-text">NASP</span>
-      </div>
 
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="nav-items">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -53,21 +78,23 @@
       </div>
     </nav>
 
-    <section id="home-banner">
+    <section id="home-banner" style="margin-top: 80px">
       <div class="banner-elements">
-        <!-- <img class="banner" src="assets/home-banner.png" alt="home-banner"> -->
         <h1 class="banner-text">
           NEPAL ASSOCIATION <br />
-          FOR THE STUDY <br />
-          OF PAIN
+          FOR THE <br />
+          STUDY OF PAIN
         </h1>
-        <button class="banner-btn">What we do</button>
+        <div>
+          <button class="banner-btn">What we do</button>
+        </div>
       </div>
     </section>
-    <section id="home-conference" class="conference">
-      <div class="conference-text-image-wrapper">
-        <div class="conference-text-part">
-          <div class="only-text-group">
+
+    <section id="home-conference">
+      <div class="conference">
+        <div class="content-wrapper">
+          <div class="text-content">
             <h2>CONFERENCE</h2>
             <h1>NASP Conference 2025</h1>
             <p>
@@ -75,29 +102,41 @@
               Management" for expert insights and innovative strategies to
               enhance patient care.
             </p>
+            <div class="btn-content">
+              <button
+                class="conference-btn"
+                onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf55H2gzJIxFOW20rh39HetxSyeljyQ8Z849vK8_zMM3nyw1w/viewform', '_blank')"
+              >
+                Register Now
+              </button>
+              <button
+                class="conference-btn"
+                onclick="window.location.href='nasp_pain.html';"
+              >
+                Learn More
+              </button>
+            </div>
           </div>
-          <!-- <div class="quantity-text-group">
-                    <div class="quantity-text">
-                        <h1>34M+</h1>
-                        <h2>Donation Received</h2>
-                    </div>
-                    <div class="quantity-text">
-                        <h1>400+</h1>
-                        <h2>Volunteers</h2>
-                    </div>
-                    <div class="quantity-text">
-                        <h1>40K+</h1>
-                        <h2>Trees Planted</h2>
-                    </div>
-                </div> -->
-        </div>
-        <div class="conference-image-part">
-          <img src="assets/conference-img.png" alt="conference image" />
+          <div class="image-content">
+            <img
+              class="conference-image"
+              src="assets/conference-img.png"
+              alt="conference image"
+            />
+          </div>
         </div>
       </div>
     </section>
+
     <section id="home-know-about">
       <div class="know-about-container">
+        <div class="know-about-image">
+          <img
+            class="know-about-img"
+            src="assets/know-about-us.png"
+            alt="know-about-us"
+          />
+        </div>
         <div class="know-about-content">
           <div class="know-about-text">
             <div class="line"></div>
@@ -116,154 +155,289 @@
             Asish Subedi, NASP aims to guide and advocate for effective pain
             relief, enhancing the well-being of countless Nepalese.
           </p>
-          <button class="know-about-btn">Learn more</button>
+          <button
+            class="know-about-btn"
+            onclick="window.location.href='aboutus.html';"
+          >
+            Learn more
+          </button>
         </div>
-        <img
-          class="know-about-img"
-          src="assets/know-about-us.png"
-          alt="know-about-us"
-        />
       </div>
     </section>
-    <section class="home-activities">
-      <h2>ACTIVITIES</h2>
-      <h1>View our Activities</h1>
-      <div class="activitites-image-group">
-        <div class="activities-image-wrapper">
-          <div class="activities-image-text-part">
-            <h2>CME on Pain after Surgery</h2>
-            <p>
-              The Nepal Association for the Study of Pain's (NASP) first
-              scientific event on "Pain after Surgery," held on October 27,
-              2017, at BPKIHS, featured expert lectures and attracted 151
-              participants.
-            </p>
-            <!-- <button type="button">See more</button> -->
-            <button
-              type="button"
-              onclick="window.open('pain_after_surgery.html', '_blank')"
-            >
-              See more
-            </button>
-          </div>
-          <img src="assets/home-banner.png" alt="Forest Image" />
-        </div>
-        <div class="activities-image-wrapper">
-          <div class="activities-image-text-part">
-            <h2>
-              CME on
-              <br />
-              "Interventional Pain Management"
-            </h2>
-            <p>
-              Attended by 51 participants, with special thanks to Dr. Kathy Wang
-              from Seattle's Neospine Center, Professor Roshna Amatya and NASP
-              dignitaries, and gratitude to Troikaa Pharmaceuticals for their
-              support.
-            </p>
-            <button type="button">See more</button>
-          </div>
-          <img src="assets/home-banner.png" alt="Forest Image" />
-        </div>
-        <div class="activities-image-wrapper">
-          <div class="activities-image-text-part">
-            <h2>Musculoskeletal Ultrasound Workshop for Chronic Pain</h2>
 
-            <button type="button">See more</button>
+    <section id="home-know-about">
+      <div class="know-about-container">
+        <div class="know-about-content">
+          <div class="know-about-text">
+            <div class="line"></div>
+            <span>ACTIVITIES</span>
           </div>
-          <img src="assets/home-banner.png" alt="Forest Image" />
+          <h1 class="know-about-header">
+            Empowering Pain
+            <br />
+            Relief: NASP Activities
+          </h1>
+          <p class="know-about-info">
+            We organize Continuing Medical Education (CME) programs, interactive
+            workshops, and community awareness events to advance knowledge in
+            pain management. Stay updated on our initiatives to enhance pain
+            care and education in Nepal.
+          </p>
+          <button
+            class="know-about-btn"
+            onclick="window.location.href='activities.html';"
+          >
+            Learn more
+          </button>
+        </div>
+        <div class="know-about-image">
+          <img
+            class="know-about-img"
+            src="assets/home-activities.png"
+            alt="know-about-us"
+          />
         </div>
       </div>
     </section>
+
     <section id="our-team">
       <div class="our-team-container">
         <div class="team-text-content">
           <h1>Meet Our Team</h1>
-          <p>
-            Executive Committee for 2023-2025
-            <br />
-         
-          </p>
+          <p>Executive Committee 2023-2025</p>
         </div>
-        <div class="team-card-content">
-          <div class="card1">
-            <img class="card-pic" src="assets/card-pic-1.png" alt="pic-1" />
-            <div class="card-text-content">
-              <h2>Dr. Renu Gurung</h2>
-              <h3>President</h3>
-              <div class="card-icons">
-                <img
-                  src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
-                  alt="facebook-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
-                  alt="twitter-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
-                  alt="linkedin-logo"
-                />
+        <div class="team-card-wrapper">
+          <div class="team-card-content">
+            <div class="card">
+              <img class="card-pic" src="assets/card-pic-1.png" alt="pic-1" />
+              <div class="card-text-content">
+                <h2>Dr. Renu Gurung</h2>
+                <h3>President</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card2">
-            <img class="card-pic" src="assets/card-pic-2.png" alt="pic-1" />
-            <div class="card-text-content">
-              <h2>Dr. Asish Subedi</h2>
-              <h3>Vice-President</h3>
-              <div class="card-icons">
-                <img
-                  src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
-                  alt="facebook-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
-                  alt="twitter-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
-                  alt="linkedin-logo"
-                />
+            <div class="card">
+              <img class="card-pic" src="assets/card-pic-2.png" alt="pic-1" />
+              <div class="card-text-content">
+                <h2>Dr. Asish Subedi</h2>
+                <h3>Vice-President</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card3">
-            <img class="card-pic" src="assets/card-pic-3.png" alt="pic-1" />
-            <div class="card-text-content">
-              <h2>Dr Bigen Man Shakya</h2>
-              <h3>General Secretary</h3>
-              <div class="card-icons">
-                <img
-                  src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
-                  alt="facebook-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
-                  alt="twitter-logo"
-                />
-                <img
-                  src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
-                  alt="linkedin-logo"
-                />
+            <div class="card">
+              <img class="card-pic" src="assets/card-pic-3.png" alt="pic-1" />
+              <div class="card-text-content">
+                <h2>Dr. Bigen Man Shakya</h2>
+                <h3>General Secretary</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/niru-nepal.jpeg"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Dr. Niru Nepal</h2>
+                <h3>Joint Secretary</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/hari-prasad.png"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Dr. Hari Prasad Rijal</h2>
+                <h3>Treasurer</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/hari-poudel.jpeg"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Dr. Hari Poudel</h2>
+                <h3>Member</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/laxmi-pathak.jpeg"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Prof. Laxmi Pathak</h2>
+                <h3>Member</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/sangam-pokhrel.jpeg"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Dr. Sangam Pokharel</h2>
+                <h3>Member</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-pic"
+                src="assets/aboutus/jay-prakash-thakur.png"
+                alt="pic-1"
+              />
+              <div class="card-text-content">
+                <h2>Dr. Jay Prakash Thakur</h2>
+                <h3>Member</h3>
+                <div class="card-icons">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000"
+                    alt="facebook-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                    alt="twitter-logo"
+                  />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000"
+                    alt="linkedin-logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="our-events">
       <div class="our-events-container">
         <div class="event-content">
           <div class="event-text-content">
-            <h1>Our Events</h1>
+            <h1>Upcoming Events</h1>
             <div class="big-line"></div>
           </div>
           <br />
           <br />
           <div class="event-card">
             <span>
-              23
+              18
               <br />
               <h1>JAN</h1>
             </span>
@@ -278,7 +452,9 @@
                 2025
               </span>
             </div>
-            <img src="assets/arrow-button.png" alt="right-icon" />
+            <a href="nasp_pain.html"
+              ><img src="assets/arrow-button.png" alt="right-icon"
+            /></a>
           </div>
         </div>
         <br />
@@ -295,6 +471,7 @@
         </div>
       </div>
     </section>
+
     <section id="footer">
       <div class="footer-container">
         <div class="footer-content">
@@ -319,11 +496,9 @@
           <div class="row3">
             <ul>
               <li>Contact us</li>
-              <li>
-                ​Department of Anaesthesiology, TUTH, IOM,Kathmandu, Nepal
-              </li>
+              <li>​Department of Anaesthesiology, TUTHIOM,Kathmandu, Nepal</li>
               <li>+977 9841227182</li>
-              <li>nasp.org2017@gmail.com</li>
+              <li>nasp</li>
             </ul>
             <div class="footer-icons">
               <img
@@ -344,6 +519,11 @@
       </div>
     </section>
     <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+
       // Show the popup when the page loads
       window.onload = function () {
         document.getElementById("popup").style.display = "block";
@@ -353,6 +533,25 @@
       function closePopup() {
         document.getElementById("popup").style.display = "none";
       }
+
+      // Close the popup when clicking outside the popup-content
+      document
+        .getElementById("popup")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            closePopup();
+          }
+        });
+
+      // For Image slider
+      const teamCardWrapper = document.querySelector(".team-card-wrapper");
+
+      teamCardWrapper.addEventListener("wheel", function (e) {
+        if (e.deltaY !== 0) {
+          e.preventDefault();
+          teamCardWrapper.scrollLeft += e.deltaY;
+        }
+      });
     </script>
   </body>
 </html>

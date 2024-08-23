@@ -15,12 +15,15 @@
       <div class="logo-container">
         <img class="logo" src="assets/logo.png" alt="logo" />
         <span class="logo-text">NASP</span>
-      </div>
 
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="nav-items">
         <ul>
-          <!-- Add the below class for page that is to be active. -->
-          <!-- class="active" -->
           <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="activities.html">Activities</a></li>
@@ -34,7 +37,7 @@
       </div>
     </nav>
 
-    <section id="member-section">
+    <section id="member-section" style="margin-top: 80px">
       <div class="member-container">
         <div class="membership-content">
           <h1 class="member-header">Membership Form</h1>
@@ -43,10 +46,9 @@
             professionals dedicated to advancing pain studies. To initiate your
             membership, kindly complete the online form by clicking the link
             below. If you have any questions or require assistance during the
-            process, please don't hesitate to reach out to us. <br>
-
-            Life member eligibility: Master degree in medical field (Rs 5000)
-            Associate member eligibility: Bachelor degree in medical field (Rs 4000)
+            process, please don't hesitate to reach out to us. Life member
+            eligibility: Master degree in medical field (Rs 5000) Associate
+            member eligibility: Bachelor degree in medical field (Rs 4000)
           </p>
           <button
             class="member-btn"
@@ -82,11 +84,9 @@
           <div class="row3">
             <ul>
               <li>Contact us</li>
-              <li>
-                ​Department of Anaesthesiology, TUTH, IOM,Kathmandu, Nepal
-              </li>
+              <li>​Department of Anaesthesiology, TUTHIOM,Kathmandu, Nepal</li>
               <li>+977 9841227182</li>
-              <li>nasp.org2017@gmail.com</li>
+              <li>nasp</li>
             </ul>
             <div class="footer-icons">
               <img
@@ -106,5 +106,11 @@
         </div>
       </div>
     </section>
+    <script>
+      function toggleMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
