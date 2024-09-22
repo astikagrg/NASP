@@ -5,37 +5,6 @@ CSS For home-banner
 */
 
 
-/* #home-banner {
-  background-image: url(../assets/home-banner.png);
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.banner-elements {
-  width: 80%;
-  height: 290px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-.banner-text {
-  color: black;
-  font-weight: 500;
-  font-size: 54px;
-  color: #fff;
-}
-
-.banner-btn {
-  height: 50px;
-  width: 150px;
-  border-radius: 4px;
-  border: none;
-} */
-
 #home-banner {
   background-image: url(../assets/home-banner.png);
   background-size: cover;
@@ -55,6 +24,12 @@ CSS For home-banner
 
 .banner-text {
   font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.banner-text-sm {
+  font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -101,91 +76,6 @@ CSS For conference section
 ==============================================
 */
 
-/* #home-conference {
-  width: 80%;
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.conference {
-  background-color: #000;
-  width: 100%;
-  height: 80%;
-  border-radius: 12px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-wrapper {
-  height: 80%;
-  width: 90%;
-  display: flex;
-}
-
-.text-content {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.btn-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1rem;
-  margin-right: 30px;
-}
-
-.conference-btn {
-  background-color: #70C174;
-  width: auto;
-  height: auto;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
-  padding: 20px;
-}
-
-.conference-btn:hover {
-  background-color: #00c90a;
-  color: #fff;
-}
-
-.text-content h2 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 25px;
-}
-
-.text-content h1 {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 57px;
-}
-
-.text-content p {
-  font-size: 16px;
-  color: rgb(218, 218, 218);
-  line-height: 25px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.image-content {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 
 #home-conference {
@@ -369,80 +259,6 @@ CSS For know about us section
 ==============================================
 */
 
-/* #home-know-about {
-  width: 100%;
-  height: 550px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.know-about-container {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.know-about-image {
-  width: 45%;
-  display: flex;
-  align-items: center;
-
-}
-
-.know-about-img {
-  max-height: 100%;
-  height: 450px;
-  width: auto;
-  border-radius: 32px;
-}
-
-.know-about-content {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-.know-about-text {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.line {
-  width: 70px;
-  height: 2px;
-  background: #000;
-}
-
-.know-about-header {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 57px;
-
-}
-
-.know-about-info {
-  text-align: left;
-  margin-right: 100px;
-  color: #525560;
-  line-height: 25px;
-}
-
-.know-about-btn {
-  height: 50px;
-  width: 150px;
-  background-color: #70C174;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  border: none;
-} */
 
 #home-know-about {
   width: 100%;
@@ -710,118 +526,6 @@ CSS For our team section
 CSS For our events section
 ==============================================
 */
-
-/* #our-events {
-  height: 750px;
-  width: 80%;
-}
-
-.our-events-container {
-  height: 100%;
-  width: 100%;
-}
-
-
-.event-text-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.big-line {
-  width: 80%;
-  height: 1px;
-  background: #E5E5E5;
-}
-
-.event-card {
-  height: 190px;
-  width: 50%;
-  background-color: #BEF3C0;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.event-card span {
-  font-size: 48px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.event-card span h1 {
-  font-size: 16px;
-}
-
-.event-card img {
-  height: 56px;
-  width: 56px;
-}
-
-.event-card-text h2 {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.event-card-text span {
-  font-size: 40px;
-}
-
-
-.mission-card {
-  position: relative;
-  background-image: url(../assets/events-banner.png);
-  height: 384px;
-  width: 100%;
-  background-size: cover;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.mission-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-.mission-card-content {
-  position: relative;
-  z-index: 1;
-}
-
-.mission-card-content p {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-
-.mission-card button {
-  background-color: #fff;
-  border: none;
-  padding: 10px 20px;
-  color: #000;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.mission-card button:hover {
-  background-color: #b4b4b4;
-} */
-
 
 
 #our-events {
