@@ -7,6 +7,7 @@
 
 .member-container {
     width: 80%;
+    height: 55lvh;
     display: flex;
     flex-direction: column;
     align-items: center;
